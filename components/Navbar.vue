@@ -6,8 +6,8 @@
       </a> -->
       <div class="filtering">
         <div class="filter">
-          <span data-filter=".dark">Dark</span>
-          <span data-filter=".light">Light</span>
+          <span data-filter=".dark">Espanol</span>
+          <span data-filter=".light">English</span>
         </div>
       </div>
       <button

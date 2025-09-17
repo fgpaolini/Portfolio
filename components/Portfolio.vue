@@ -18,32 +18,68 @@
         </div>
       </div>
       <div class="work-swiper-center">
-        <Swiper id="content-carousel-container-unq-work" v-bind="swiperOptions">
-          <SwiperSlide v-for="(item, i) in data" :key="i">
-            <div class="item">
-              <div class="img">
-                <img :src="item.img" alt="" />
-              </div>
-              <div
-                class="cont d-flex align-items-center mt-30 pb-15 bord-thin-bottom"
-              >
-                <div>
-                  <h5>{{ item.title }}</h5>
-                  <p>{{ item.subTitle }}</p>
+        <ClientOnly>
+          <Swiper id="content-carousel-container-unq-work" v-bind="swiperOptions">
+            <SwiperSlide v-for="(item, i) in data" :key="`slide-${i}-${item.img}`">
+              <div class="item">
+                <div class="img">
+                  <img :src="item.img" :alt="item.title" />
                 </div>
-                <div class="ml-auto">
-                  <a :href="item.link" class="rmore">
-                    <img
-                      src="/dark/assets/imgs/arrow-right.png"
-                      alt=""
-                      class="icon-img-20"
-                    />
-                  </a>
+                <div
+                  class="cont d-flex align-items-center mt-30 pb-15 bord-thin-bottom"
+                >
+                  <div>
+                    <h5>{{ item.title }}</h5>
+                    <p>{{ item.subTitle }}</p>
+                  </div>
+                  <div class="ml-auto">
+                    <a :href="item.link" class="rmore">
+                      <img
+                        src="/dark/assets/imgs/arrow-right.png"
+                        alt="View project"
+                        class="icon-img-20"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+          </Swiper>
+          <template #fallback>
+            <div class="portfolio-fallback">
+              <div class="row">
+                <div 
+                  v-for="(item, i) in data" 
+                  :key="`fallback-${i}`"
+                  class="col-lg-6 col-md-6 mb-4"
+                >
+                  <div class="item">
+                    <div class="img">
+                      <img :src="item.img" :alt="item.title" />
+                    </div>
+                    <div
+                      class="cont d-flex align-items-center mt-30 pb-15 bord-thin-bottom"
+                    >
+                      <div>
+                        <h5>{{ item.title }}</h5>
+                        <p>{{ item.subTitle }}</p>
+                      </div>
+                      <div class="ml-auto">
+                        <a :href="item.link" class="rmore">
+                          <img
+                            src="/dark/assets/imgs/arrow-right.png"
+                            alt="View project"
+                            class="icon-img-20"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </SwiperSlide>
-        </Swiper>
+          </template>
+        </ClientOnly>
       </div>
     </div>
   </section>
