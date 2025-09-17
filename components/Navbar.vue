@@ -591,6 +591,7 @@
 <script setup>
 import { onMounted, onUnmounted } from 'vue';
 import { ref } from 'vue';
+import initIsotope from '~/common/initIsotope';
 
 function handleScroll() {
   const bodyScroll = window.scrollY;
@@ -626,6 +627,7 @@ function toggleSearch() {
 }
 
 onMounted(() => {
+  //initIsotope();
   window.addEventListener('scroll', handleScroll);
 });
 

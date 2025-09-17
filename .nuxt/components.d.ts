@@ -14,6 +14,16 @@ type HydrationStrategies = {
 type LazyComponent<T> = (T & DefineComponent<HydrationStrategies, {}, {}, {}, {}, {}, {}, { hydrated: () => void }>)
 
 
+export const About: typeof import("../components/About.vue")['default']
+export const Blog: typeof import("../components/Blog.vue")['default']
+export const Contact: typeof import("../components/Contact.vue")['default']
+export const Footer: typeof import("../components/Footer.vue")['default']
+export const Header: typeof import("../components/Header.vue")['default']
+export const Navbar: typeof import("../components/Navbar.vue")['default']
+export const Portfolio: typeof import("../components/Portfolio.vue")['default']
+export const Services: typeof import("../components/Services.vue")['default']
+export const Skills: typeof import("../components/Skills.vue")['default']
+export const Testimonials: typeof import("../components/Testimonials.vue")['default']
 export const DarkAbout: typeof import("../components/dark/About.vue")['default']
 export const DarkFAQSBlog: typeof import("../components/dark/FAQS/Blog.vue")['default']
 export const DarkFAQS: typeof import("../components/dark/FAQS/FAQS.vue")['default']
@@ -106,16 +116,6 @@ export const DarkDigitalAgencySkills: typeof import("../components/dark/digital-
 export const DarkDigitalAgencyTeam: typeof import("../components/dark/digital-agency/Team.vue")['default']
 export const DarkDigitalAgencyTestimonials: typeof import("../components/dark/digital-agency/Testimonials.vue")['default']
 export const DarkError404Error: typeof import("../components/dark/error404/Error.vue")['default']
-export const DarkHomeFreelancerAbout: typeof import("../components/dark/home-freelancer/About.vue")['default']
-export const DarkHomeFreelancerBlog: typeof import("../components/dark/home-freelancer/Blog.vue")['default']
-export const DarkHomeFreelancerContact: typeof import("../components/dark/home-freelancer/Contact.vue")['default']
-export const DarkHomeFreelancerFooter: typeof import("../components/dark/home-freelancer/Footer.vue")['default']
-export const DarkHomeFreelancerHeader: typeof import("../components/dark/home-freelancer/Header.vue")['default']
-export const DarkHomeFreelancerNavbar: typeof import("../components/dark/home-freelancer/Navbar.vue")['default']
-export const DarkHomeFreelancerPortfolio: typeof import("../components/dark/home-freelancer/Portfolio.vue")['default']
-export const DarkHomeFreelancerServices: typeof import("../components/dark/home-freelancer/Services.vue")['default']
-export const DarkHomeFreelancerSkills: typeof import("../components/dark/home-freelancer/Skills.vue")['default']
-export const DarkHomeFreelancerTestimonials: typeof import("../components/dark/home-freelancer/Testimonials.vue")['default']
 export const DarkHomeMainBlog: typeof import("../components/dark/home-main/Blog.vue")['default']
 export const DarkHomeMainClients: typeof import("../components/dark/home-main/Clients.vue")['default']
 export const DarkHomeMainFooter: typeof import("../components/dark/home-main/Footer.vue")['default']
@@ -267,6 +267,16 @@ export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
 export const NuxtIsland: typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
 export const NuxtRouteAnnouncer: typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']
+export const LazyAbout: LazyComponent<typeof import("../components/About.vue")['default']>
+export const LazyBlog: LazyComponent<typeof import("../components/Blog.vue")['default']>
+export const LazyContact: LazyComponent<typeof import("../components/Contact.vue")['default']>
+export const LazyFooter: LazyComponent<typeof import("../components/Footer.vue")['default']>
+export const LazyHeader: LazyComponent<typeof import("../components/Header.vue")['default']>
+export const LazyNavbar: LazyComponent<typeof import("../components/Navbar.vue")['default']>
+export const LazyPortfolio: LazyComponent<typeof import("../components/Portfolio.vue")['default']>
+export const LazyServices: LazyComponent<typeof import("../components/Services.vue")['default']>
+export const LazySkills: LazyComponent<typeof import("../components/Skills.vue")['default']>
+export const LazyTestimonials: LazyComponent<typeof import("../components/Testimonials.vue")['default']>
 export const LazyDarkAbout: LazyComponent<typeof import("../components/dark/About.vue")['default']>
 export const LazyDarkFAQSBlog: LazyComponent<typeof import("../components/dark/FAQS/Blog.vue")['default']>
 export const LazyDarkFAQS: LazyComponent<typeof import("../components/dark/FAQS/FAQS.vue")['default']>
@@ -359,16 +369,6 @@ export const LazyDarkDigitalAgencySkills: LazyComponent<typeof import("../compon
 export const LazyDarkDigitalAgencyTeam: LazyComponent<typeof import("../components/dark/digital-agency/Team.vue")['default']>
 export const LazyDarkDigitalAgencyTestimonials: LazyComponent<typeof import("../components/dark/digital-agency/Testimonials.vue")['default']>
 export const LazyDarkError404Error: LazyComponent<typeof import("../components/dark/error404/Error.vue")['default']>
-export const LazyDarkHomeFreelancerAbout: LazyComponent<typeof import("../components/dark/home-freelancer/About.vue")['default']>
-export const LazyDarkHomeFreelancerBlog: LazyComponent<typeof import("../components/dark/home-freelancer/Blog.vue")['default']>
-export const LazyDarkHomeFreelancerContact: LazyComponent<typeof import("../components/dark/home-freelancer/Contact.vue")['default']>
-export const LazyDarkHomeFreelancerFooter: LazyComponent<typeof import("../components/dark/home-freelancer/Footer.vue")['default']>
-export const LazyDarkHomeFreelancerHeader: LazyComponent<typeof import("../components/dark/home-freelancer/Header.vue")['default']>
-export const LazyDarkHomeFreelancerNavbar: LazyComponent<typeof import("../components/dark/home-freelancer/Navbar.vue")['default']>
-export const LazyDarkHomeFreelancerPortfolio: LazyComponent<typeof import("../components/dark/home-freelancer/Portfolio.vue")['default']>
-export const LazyDarkHomeFreelancerServices: LazyComponent<typeof import("../components/dark/home-freelancer/Services.vue")['default']>
-export const LazyDarkHomeFreelancerSkills: LazyComponent<typeof import("../components/dark/home-freelancer/Skills.vue")['default']>
-export const LazyDarkHomeFreelancerTestimonials: LazyComponent<typeof import("../components/dark/home-freelancer/Testimonials.vue")['default']>
 export const LazyDarkHomeMainBlog: LazyComponent<typeof import("../components/dark/home-main/Blog.vue")['default']>
 export const LazyDarkHomeMainClients: LazyComponent<typeof import("../components/dark/home-main/Clients.vue")['default']>
 export const LazyDarkHomeMainFooter: LazyComponent<typeof import("../components/dark/home-main/Footer.vue")['default']>

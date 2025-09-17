@@ -14,7 +14,17 @@ type HydrationStrategies = {
 type LazyComponent<T> = (T & DefineComponent<HydrationStrategies, {}, {}, {}, {}, {}, {}, { hydrated: () => void }>)
 
 interface _GlobalComponents {
-      'DarkAbout': typeof import("../../components/dark/About.vue")['default']
+      'About': typeof import("../../components/About.vue")['default']
+    'Blog': typeof import("../../components/Blog.vue")['default']
+    'Contact': typeof import("../../components/Contact.vue")['default']
+    'Footer': typeof import("../../components/Footer.vue")['default']
+    'Header': typeof import("../../components/Header.vue")['default']
+    'Navbar': typeof import("../../components/Navbar.vue")['default']
+    'Portfolio': typeof import("../../components/Portfolio.vue")['default']
+    'Services': typeof import("../../components/Services.vue")['default']
+    'Skills': typeof import("../../components/Skills.vue")['default']
+    'Testimonials': typeof import("../../components/Testimonials.vue")['default']
+    'DarkAbout': typeof import("../../components/dark/About.vue")['default']
     'DarkFAQSBlog': typeof import("../../components/dark/FAQS/Blog.vue")['default']
     'DarkFAQS': typeof import("../../components/dark/FAQS/FAQS.vue")['default']
     'DarkFAQSHeader': typeof import("../../components/dark/FAQS/Header.vue")['default']
@@ -106,16 +116,6 @@ interface _GlobalComponents {
     'DarkDigitalAgencyTeam': typeof import("../../components/dark/digital-agency/Team.vue")['default']
     'DarkDigitalAgencyTestimonials': typeof import("../../components/dark/digital-agency/Testimonials.vue")['default']
     'DarkError404Error': typeof import("../../components/dark/error404/Error.vue")['default']
-    'DarkHomeFreelancerAbout': typeof import("../../components/dark/home-freelancer/About.vue")['default']
-    'DarkHomeFreelancerBlog': typeof import("../../components/dark/home-freelancer/Blog.vue")['default']
-    'DarkHomeFreelancerContact': typeof import("../../components/dark/home-freelancer/Contact.vue")['default']
-    'DarkHomeFreelancerFooter': typeof import("../../components/dark/home-freelancer/Footer.vue")['default']
-    'DarkHomeFreelancerHeader': typeof import("../../components/dark/home-freelancer/Header.vue")['default']
-    'DarkHomeFreelancerNavbar': typeof import("../../components/dark/home-freelancer/Navbar.vue")['default']
-    'DarkHomeFreelancerPortfolio': typeof import("../../components/dark/home-freelancer/Portfolio.vue")['default']
-    'DarkHomeFreelancerServices': typeof import("../../components/dark/home-freelancer/Services.vue")['default']
-    'DarkHomeFreelancerSkills': typeof import("../../components/dark/home-freelancer/Skills.vue")['default']
-    'DarkHomeFreelancerTestimonials': typeof import("../../components/dark/home-freelancer/Testimonials.vue")['default']
     'DarkHomeMainBlog': typeof import("../../components/dark/home-main/Blog.vue")['default']
     'DarkHomeMainClients': typeof import("../../components/dark/home-main/Clients.vue")['default']
     'DarkHomeMainFooter': typeof import("../../components/dark/home-main/Footer.vue")['default']
@@ -233,7 +233,7 @@ interface _GlobalComponents {
     'DarkServices': typeof import("../../components/dark/services/Services.vue")['default']
     'DarkServices2Brands': typeof import("../../components/dark/services2/Brands.vue")['default']
     'DarkServices2Header': typeof import("../../components/dark/services2/Header.vue")['default']
-    'DarkServices2MainFeat': typeof import("../../components/dark/services2/MainFeat.vue")['default']
+    'DarkServices2MainFeat': typeof import../../components/About.vue.vue")['default']
     'DarkServices2Services': typeof import("../../components/dark/services2/Services.vue")['default']
     'DarkShowcaseCarouselHeader': typeof import("../../components/dark/showcase-carousel/Header.vue")['default']
     'DarkShowcaseFullscreenHeader': typeof import("../../components/dark/showcase-fullscreen/Header.vue")['default']
@@ -267,7 +267,17 @@ interface _GlobalComponents {
     'Body': typeof import("../../node_modules/nuxt/dist/head/runtime/components")['Body']
     'NuxtIsland': typeof import("../../node_modules/nuxt/dist/app/components/nuxt-island")['default']
     'NuxtRouteAnnouncer': typeof import("../../node_modules/nuxt/dist/app/components/server-placeholder")['default']
-      'LazyDarkAbout': LazyComponent<typeof import("../../components/dark/About.vue")['default']>
+      'LazyAbout': LazyComponent<typeof import("../../components/About.vue")['default']>
+    'LazyBlog': LazyComponent<typeof import("../../components/Blog.vue")['default']>
+    'LazyContact': LazyComponent<typeof import("../../components/Contact.vue")['default']>
+    'LazyFooter': LazyComponent<typeof import("../../components/Footer.vue")['default']>
+    'LazyHeader': LazyComponent<typeof import("../../components/Header.vue")['default']>
+    'LazyNavbar': LazyComponent<typeof import("../../components/Navbar.vue")['default']>
+    'LazyPortfolio': LazyComponent<typeof import("../../components/Portfolio.vue")['default']>
+    'LazyServices': LazyComponent<typeof import("../../components/Services.vue")['default']>
+    'LazySkills': LazyComponent<typeof import("../../components/Skills.vue")['default']>
+    'LazyTestimonials': LazyComponent<typeof import("../../components/Testimonials.vue")['default']>
+    'LazyDarkAbout': LazyComponent<typeof import("../../components/dark/About.vue")['default']>
     'LazyDarkFAQSBlog': LazyComponent<typeof import("../../components/dark/FAQS/Blog.vue")['default']>
     'LazyDarkFAQS': LazyComponent<typeof import("../../components/dark/FAQS/FAQS.vue")['default']>
     'LazyDarkFAQSHeader': LazyComponent<typeof import("../../components/dark/FAQS/Header.vue")['default']>
@@ -359,16 +369,6 @@ interface _GlobalComponents {
     'LazyDarkDigitalAgencyTeam': LazyComponent<typeof import("../../components/dark/digital-agency/Team.vue")['default']>
     'LazyDarkDigitalAgencyTestimonials': LazyComponent<typeof import("../../components/dark/digital-agency/Testimonials.vue")['default']>
     'LazyDarkError404Error': LazyComponent<typeof import("../../components/dark/error404/Error.vue")['default']>
-    'LazyDarkHomeFreelancerAbout': LazyComponent<typeof import("../../components/dark/home-freelancer/About.vue")['default']>
-    'LazyDarkHomeFreelancerBlog': LazyComponent<typeof import("../../components/dark/home-freelancer/Blog.vue")['default']>
-    'LazyDarkHomeFreelancerContact': LazyComponent<typeof import("../../components/dark/home-freelancer/Contact.vue")['default']>
-    'LazyDarkHomeFreelancerFooter': LazyComponent<typeof import("../../components/dark/home-freelancer/Footer.vue")['default']>
-    'LazyDarkHomeFreelancerHeader': LazyComponent<typeof import("../../components/dark/home-freelancer/Header.vue")['default']>
-    'LazyDarkHomeFreelancerNavbar': LazyComponent<typeof import("../../components/dark/home-freelancer/Navbar.vue")['default']>
-    'LazyDarkHomeFreelancerPortfolio': LazyComponent<typeof import("../../components/dark/home-freelancer/Portfolio.vue")['default']>
-    'LazyDarkHomeFreelancerServices': LazyComponent<typeof import("../../components/dark/home-freelancer/Services.vue")['default']>
-    'LazyDarkHomeFreelancerSkills': LazyComponent<typeof import("../../components/dark/home-freelancer/Skills.vue")['default']>
-    'LazyDarkHomeFreelancerTestimonials': LazyComponent<typeof import("../../components/dark/home-freelancer/Testimonials.vue")['default']>
     'LazyDarkHomeMainBlog': LazyComponent<typeof import("../../components/dark/home-main/Blog.vue")['default']>
     'LazyDarkHomeMainClients': LazyComponent<typeof import("../../components/dark/home-main/Clients.vue")['default']>
     'LazyDarkHomeMainFooter': LazyComponent<typeof import("../../components/dark/home-main/Footer.vue")['default']>
@@ -486,7 +486,7 @@ interface _GlobalComponents {
     'LazyDarkServices': LazyComponent<typeof import("../../components/dark/services/Services.vue")['default']>
     'LazyDarkServices2Brands': LazyComponent<typeof import("../../components/dark/services2/Brands.vue")['default']>
     'LazyDarkServices2Header': LazyComponent<typeof import("../../components/dark/services2/Header.vue")['default']>
-    'LazyDarkServices2MainFeat': LazyComponent<typeof import("../../components/dark/services2/MainFeat.vue")['default']>
+    'LazyDarkServices2MainFeat': LazyComponent<typeof import../../components/About.vue.vue")['default']>
     'LazyDarkServices2Services': LazyComponent<typeof import("../../components/dark/services2/Services.vue")['default']>
     'LazyDarkShowcaseCarouselHeader': LazyComponent<typeof import("../../components/dark/showcase-carousel/Header.vue")['default']>
     'LazyDarkShowcaseFullscreenHeader': LazyComponent<typeof import("../../components/dark/showcase-fullscreen/Header.vue")['default']>
