@@ -7,7 +7,7 @@
             <div class="d-flex align-items-center">
               <div>
                 <div class="info">
-                  <h3 class="main-color fz-50 line-height-1">12</h3>
+                  <h3 class="main-color fz-50 line-height-1">2</h3>
                   <p class="nowrap">
                     Years of
                     <br />
@@ -46,13 +46,12 @@
             <div class="sec-head mb-30">
               <h6 class="sub-title mb-15 main-color">About Me</h6>
               <h2>
-                Lead product designer <br />
-                and art director.
+                Full Stack Developer <br />
+                especializado en Vue.js, Nuxt y ASP.NET Core
               </h2>
               <div class="text mt-15">
                 <p>
-                  We shifted our talents to frontier science because we wanted
-                  our work to have tangible, human-positive impact.
+                  Apasionado por crear aplicaciones web modernas, escalables y de alto rendimiento. Desarrollo interfaces interactivas y responsivas.
                 </p>
               </div>
             </div>
@@ -64,15 +63,15 @@
                       <h6 class="nowrap fz-16">Name :</h6>
                     </div>
                     <div class="ml-20">
-                      <p class="fz-14">Matthew Perry</p>
+                      <p class="fz-14">Fernando Gonzalez Paolini</p>
                     </div>
                   </div>
                   <div class="d-flex align-items-center">
                     <div>
-                      <h6 class="nowrap fz-16">Address :</h6>
+                      <h6 class="nowrap fz-16">City :</h6>
                     </div>
                     <div class="ml-20">
-                      <p class="fz-14">Germany Office 478 Berlin</p>
+                      <p class="fz-14">Granada</p>
                     </div>
                   </div>
                 </div>
@@ -82,7 +81,7 @@
                       <h6 class="nowrap fz-16">Phone :</h6>
                     </div>
                     <div class="ml-20">
-                      <p class="fz-14">+1 840 841 25 69</p>
+                      <p class="fz-14">+34 66 08 56 92</p>
                     </div>
                   </div>
                   <div class="d-flex align-items-center">
@@ -90,7 +89,7 @@
                       <h6 class="nowrap fz-16">Email :</h6>
                     </div>
                     <div class="ml-20">
-                      <p class="fz-14">hello@design.com</p>
+                      <p class="fz-14">fgpaolini@gmail.com</p>
                     </div>
                   </div>
                 </div>

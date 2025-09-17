@@ -14,13 +14,13 @@
         </div>
       </div>
       <div class="row">
+
         <div class="col-lg-4">
           <div class="item-box radius-15 md-mb30">
             <div class="ti-paint-bucket main-color fz-50 mb-40"></div>
-            <h5 class="mb-15">UI / UX Design</h5>
+            <h5 class="mb-15">Desarrollo Frontend</h5>
             <p>
-              Live workshop where we define the main problems and challenges
-              before building a strategic plan moving forward.
+              Creación de interfaces web modernas, rápidas y responsivas. Me enfoco en construir experiencias de usuario fluidas.
             </p>
             <a href="/dark/page-services-details" class="rmore mt-30">
               <span class="sub-title">Read More</span>
@@ -32,13 +32,13 @@
             </a>
           </div>
         </div>
+
         <div class="col-lg-4">
           <div class="item-box radius-15 md-mb30">
             <div class="ti-layout-slider main-color fz-50 mb-40"></div>
-            <h5 class="mb-15">Web Development</h5>
+            <h5 class="mb-15">Desarrollo Backend</h5>
             <p>
-              Live workshop where we define the main problems and challenges
-              before building a strategic plan moving forward.
+              Implementación de APIs. Arquitecturas escalables, limpias y preparadas para producción. 
             </p>
             <a href="/dark/page-services-details" class="rmore mt-30">
               <span class="sub-title">Read More</span>
@@ -50,13 +50,13 @@
             </a>
           </div>
         </div>
+
         <div class="col-lg-4">
           <div class="item-box radius-15">
             <div class="ti-rocket main-color fz-50 mb-40"></div>
-            <h5 class="mb-15">Digital Marketing</h5>
+            <h5 class="mb-15">Integracion Full Stack</h5>
             <p>
-              Live workshop where we define the main problems and challenges
-              before building a strategic plan moving forward.
+              Desarrollo de aplicaciones Full Stack, conectando frontend y backend, seguras y personalizadas para cada proyecto.
             </p>
             <a href="/dark/page-services-details" class="rmore mt-30">
               <span class="sub-title">Read More</span>

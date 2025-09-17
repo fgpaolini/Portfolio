@@ -8,8 +8,8 @@
     <div id="smooth-content">
       <main class="main-bg">
         <Header />
-        <About />
         <Services />
+        <About />
         <Skills />
         <Portfolio />
         <Testimonials />
