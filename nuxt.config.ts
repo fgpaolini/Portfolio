@@ -12,7 +12,7 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: 'infolio',
+      title: 'Fernando',
       htmlAttrs: {
         lang: 'en',
       },

@@ -1,10 +1,15 @@
 <template>
   <nav class="navbar navbar-expand-lg bord blur">
     <div class="container">
-      <a class="logo icon-img-100" href="#">
+<!--       <a class="logo icon-img-100" href="#">
         <img src="/dark/assets/imgs/logo-light.png" alt="logo" />
-      </a>
-
+      </a> -->
+      <div class="filtering">
+        <div class="filter">
+          <span data-filter=".dark">Dark</span>
+          <span data-filter=".light">Light</span>
+        </div>
+      </div>
       <button
         class="navbar-toggler"
         type="button"

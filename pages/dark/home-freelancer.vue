@@ -4,7 +4,8 @@
   <ProgressScroll />
   <Lines />
   <div id="smooth-wrapper">
-    <Navbar />
+    <!-- <Navbar /> -->
+    <DarkHomeFreelancerNavbar />
     <div id="smooth-content">
       <main class="main-bg">
         <Header />
@@ -36,6 +37,8 @@ import Services from '@/components/dark/home-freelancer/Services';
 import Skills from '@/components/dark/home-freelancer/Skills';
 import Testimonials from '@/components/dark/home-freelancer/Testimonials';
 import { onMounted } from 'vue';
+import initIsotope from '@/common/initIsotope';
+
 
 useHead({
   link: [
@@ -47,6 +50,7 @@ useHead({
 });
 
 onMounted(() => {
+  initIsotope();
   gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
   ScrollTrigger.normalizeScroll(true);
   ScrollSmoother.create({
