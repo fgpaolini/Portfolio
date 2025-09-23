@@ -233,7 +233,7 @@ interface _GlobalComponents {
     'DarkServices': typeof import("../../components/dark/services/Services.vue")['default']
     'DarkServices2Brands': typeof import("../../components/dark/services2/Brands.vue")['default']
     'DarkServices2Header': typeof import("../../components/dark/services2/Header.vue")['default']
-    'DarkServices2MainFeat': typeof import../../components/About.vue.vue")['default']
+    'DarkServices2MainFeat': typeof import("../../components/dark/services2/MainFeat.vue")['default']
     'DarkServices2Services': typeof import("../../components/dark/services2/Services.vue")['default']
     'DarkShowcaseCarouselHeader': typeof import("../../components/dark/showcase-carousel/Header.vue")['default']
     'DarkShowcaseFullscreenHeader': typeof import("../../components/dark/showcase-fullscreen/Header.vue")['default']
@@ -486,7 +486,7 @@ interface _GlobalComponents {
     'LazyDarkServices': LazyComponent<typeof import("../../components/dark/services/Services.vue")['default']>
     'LazyDarkServices2Brands': LazyComponent<typeof import("../../components/dark/services2/Brands.vue")['default']>
     'LazyDarkServices2Header': LazyComponent<typeof import("../../components/dark/services2/Header.vue")['default']>
-    'LazyDarkServices2MainFeat': LazyComponent<typeof import../../components/About.vue.vue")['default']>
+    'LazyDarkServices2MainFeat': LazyComponent<typeof import("../../components/dark/services2/MainFeat.vue")['default']>
     'LazyDarkServices2Services': LazyComponent<typeof import("../../components/dark/services2/Services.vue")['default']>
     'LazyDarkShowcaseCarouselHeader': LazyComponent<typeof import("../../components/dark/showcase-carousel/Header.vue")['default']>
     'LazyDarkShowcaseFullscreenHeader': LazyComponent<typeof import("../../components/dark/showcase-fullscreen/Header.vue")['default']>

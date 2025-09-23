@@ -1101,7 +1101,22 @@ const plugins = [
   _gIxwCQNWnXAKc9LeuFioKgx8FjaUPkSvayQTqgwJ_U
 ];
 
-const assets = {};
+const assets = {
+  "/index.mjs": {
+    "type": "text/javascript; charset=utf-8",
+    "etag": "\"12e85-t5sHjVypNnmzlvuhREZeu/Nn1no\"",
+    "mtime": "2025-09-23T15:35:17.264Z",
+    "size": 77445,
+    "path": "index.mjs"
+  },
+  "/index.mjs.map": {
+    "type": "application/json",
+    "etag": "\"468e5-gHplopMaDOUBRczlQjaJghFlolA\"",
+    "mtime": "2025-09-23T15:35:17.264Z",
+    "size": 288997,
+    "path": "index.mjs.map"
+  }
+};
 
 function readAsset (id) {
   const serverDir = dirname$1(fileURLToPath(globalThis._importMeta_.url));
@@ -1508,10 +1523,12 @@ async function getIslandContext(event) {
   return ctx;
 }
 
+const _lazy_e9utSF = () => Promise.resolve().then(function () { return skills$1; });
 const _lazy_QwYfQN = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
   { route: '', handler: _sy8S2T, lazy: false, middleware: true, method: undefined },
+  { route: '/api/skills', handler: _lazy_e9utSF, lazy: true, middleware: false, method: undefined },
   { route: '/__nuxt_error', handler: _lazy_QwYfQN, lazy: true, middleware: false, method: undefined },
   { route: '/__nuxt_island/**', handler: _SxA8c9, lazy: false, middleware: false, method: undefined },
   { route: '/**', handler: _lazy_QwYfQN, lazy: true, middleware: false, method: undefined }
@@ -1843,6 +1860,23 @@ const styles = {};
 const styles$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
   __proto__: null,
   default: styles
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const skills = defineEventHandler((event) => {
+  const skills = [
+    { img: "/dark/assets/imgs/resume/s1.png", percentage: "95%", title: "UI / UX Design" },
+    { img: "/dark/assets/imgs/resume/s2.png", percentage: "90%", title: "Development" },
+    { img: "/dark/assets/imgs/resume/s3.png", percentage: "85%", title: "Graphic Design" },
+    { img: "/dark/assets/imgs/resume/s5.png", percentage: "84%", title: "Sketch" },
+    { img: "/dark/assets/imgs/resume/s4.png", percentage: "78%", title: "WordPress" },
+    { img: "/dark/assets/imgs/resume/s6.png", percentage: "85%", title: "Graphic Design" }
+  ];
+  return skills;
+});
+
+const skills$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: skills
 }, Symbol.toStringTag, { value: 'Module' }));
 
 function renderPayloadResponse(ssrContext) {

@@ -4,7 +4,8 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
   ssr: true,
   typescript: {
-    shim: false,
+		strict: true,
+		typeCheck: true
   },
   nitro: {},
   alias: {

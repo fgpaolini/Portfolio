@@ -3,9 +3,9 @@
     <div class="container">
       <div class="sec-head text-center mb-80">
         <h6 class="sub-title main-color mb-15">Our Portfolio</h6>
-        <h2>Our featured <span class="fw-200">projects</span></h2>
+        <h2>Mis habilidades <span class="fw-200">destacadas</span></h2>
       </div>
-      <div class="row md-marg">
+<!--       <div class="row md-marg">
         <div class="col-lg-2 col-md-4 col-6">
           <div class="item mb-30">
             <div class="box-bord main-bg">
@@ -61,6 +61,7 @@
             <h6 class="fz-18">WordPress</h6>
           </div>
         </div>
+
         <div class="col-lg-2 col-md-4 col-6">
           <div class="item mb-30">
             <div class="box-bord main-bg">
@@ -72,7 +73,39 @@
             <h6 class="fz-18">Graphic Design</h6>
           </div>
         </div>
+
+      </div> -->
+
+      <div v-if="!IsLoading" class="row md-marg">
+        <div v-for="skill in skills" class="col-lg-2 col-md-4 col-6">
+          <div class="item mb-30">
+            <div class="box-bord main-bg">
+              <div class="img">
+                <img :src="skill.img" alt="">
+              </div>
+              <span class="value">{{ skill.percentage }}</span>
+            </div>
+            <h6 class="fz-18">{{ skill.title }}</h6>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </template>
+
+
+
+<script setup lang="ts">
+import type { AsyncDataRequestStatus, NuxtError, AsyncData } from '#app';
+
+
+const { data: skills, status } = await useFetch<Skill[]>('/api/skills', {
+  key: 'skills',  
+  server: true,
+  immediate: true,
+});
+
+const IsLoading = computed(() => status.value === 'pending');
+
+
+</script>``
