@@ -7,6 +7,7 @@ export default defineNuxtConfig({
 		strict: true,
 		typeCheck: true
   },
+  modules: ['@nuxt/icon'],
   nitro: {},
   alias: {
     '@': fileURLToPath(new URL('./', import.meta.url)),

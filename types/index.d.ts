@@ -1,7 +1,7 @@
 export { }
 declare global {
     type Skill = {
-        img: string;
+        icon: string;
         percentage: string;
         title: string;
 

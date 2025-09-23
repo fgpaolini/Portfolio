@@ -9,9 +9,9 @@
     <div id="smooth-content">
       <main class="main-bg">
         <Header />
-        <Services />
         <About />
         <Skills />
+        <Services />
         <Portfolio />
 <!--         <Testimonials /> -->
 <!--         <Blog /> -->

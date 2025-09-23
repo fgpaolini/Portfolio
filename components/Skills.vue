@@ -5,95 +5,23 @@
         <h6 class="sub-title main-color mb-15">Our Portfolio</h6>
         <h2>Mis habilidades <span class="fw-200">destacadas</span></h2>
       </div>
-<!--       <div class="row md-marg">
-        <div class="col-lg-2 col-md-4 col-6">
-          <div class="item mb-30">
-            <div class="box-bord main-bg">
-              <div class="img">
-                <img src="/dark/assets/imgs/resume/s1.png" alt="" />
-              </div>
-              <span class="value">95%</span>
-            </div>
-            <h6 class="fz-18">UI / UX Design</h6>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-4 col-6">
-          <div class="item mb-30">
-            <div class="box-bord main-bg">
-              <div class="img">
-                <img src="/dark/assets/imgs/resume/s2.png" alt="" />
-              </div>
-              <span class="value">90%</span>
-            </div>
-            <h6 class="fz-18">Development</h6>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-4 col-6">
-          <div class="item mb-30">
-            <div class="box-bord main-bg">
-              <div class="img">
-                <img src="/dark/assets/imgs/resume/s3.png" alt="" />
-              </div>
-              <span class="value">85%</span>
-            </div>
-            <h6 class="fz-18">Graphic Design</h6>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-4 col-6">
-          <div class="item mb-30">
-            <div class="box-bord main-bg">
-              <div class="img">
-                <img src="/dark/assets/imgs/resume/s5.png" alt="" />
-              </div>
-              <span class="value">84%</span>
-            </div>
-            <h6 class="fz-18">Sketch</h6>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-4 col-6">
-          <div class="item mb-30">
-            <div class="box-bord main-bg">
-              <div class="img">
-                <img src="/dark/assets/imgs/resume/s4.png" alt="" />
-              </div>
-              <span class="value">78%</span>
-            </div>
-            <h6 class="fz-18">WordPress</h6>
-          </div>
-        </div>
-
-        <div class="col-lg-2 col-md-4 col-6">
-          <div class="item mb-30">
-            <div class="box-bord main-bg">
-              <div class="img">
-                <img src="/dark/assets/imgs/resume/s6.png" alt="" />
-              </div>
-              <span class="value">85%</span>
-            </div>
-            <h6 class="fz-18">Graphic Design</h6>
-          </div>
-        </div>
-
-      </div> -->
-
       <div v-if="!IsLoading" class="row md-marg">
-        <div v-for="skill in skills" class="col-lg-2 col-md-4 col-6">
+        <div v-for="(skill, index) in skills" class="col-lg-2 col-md-4 col-6">
           <div class="item mb-30">
             <div class="box-bord main-bg">
-              <div class="img">
-                <img :src="skill.img" alt="">
+              <div class="img skill-icon">
+                <!-- <img v-if="index" :src="skill.img" alt=""> -->
+                <Icon :name="skill.icon" size="55"></Icon>
               </div>
-              <span class="value">{{ skill.percentage }}</span>
-            </div>
+             <!--  <span class="value" >{{ skill.percentage }}</span> -->
             <h6 class="fz-18">{{ skill.title }}</h6>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </template>
-
-
 
 <script setup lang="ts">
 import type { AsyncDataRequestStatus, NuxtError, AsyncData } from '#app';
@@ -108,4 +36,14 @@ const { data: skills, status } = await useFetch<Skill[]>('/api/skills', {
 const IsLoading = computed(() => status.value === 'pending');
 
 
-</script>``
+</script>
+
+<style scoped>
+
+.skill-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+</style>
