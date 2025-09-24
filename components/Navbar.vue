@@ -6,8 +6,12 @@
       </a> -->
       <div class="filtering">
         <div class="filter">
-          <span data-filter=".dark">Espanol</span>
-          <span data-filter=".light">English</span>
+          <NuxtLink :to="switchLocalePath('es')">
+            <span data-filter=".esp" class="active">Español</span>
+          </NuxtLink>
+          <NuxtLink :to="switchLocalePath('en')">
+            <span data-filter=".eng" @click="switchLocalePath('en')">English</span>
+          </NuxtLink>
         </div>
       </div>
       <button
@@ -35,28 +39,18 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#0" data-scroll-nav="1">
-              <span class="rolling-text">Services</span>
+            <a class="nav-link" href="#about" data-scroll-nav="1" >
+              <span class="rolling-text">{{ $t('navbar.about') }}</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#0" data-scroll-nav="2">
-              <span class="rolling-text">About</span>
+            <a class="nav-link" href="#services" data-scroll-nav="2">
+              <span class="rolling-text">{{ $t('navbar.services') }}</span>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#0" data-scroll-nav="3">
-              <span class="rolling-text">Portfolio</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#0" data-scroll-nav="4">
-              <span class="rolling-text">Clients</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#0" data-scroll-nav="5">
-              <span class="rolling-text">Blog</span>
+              <span class="rolling-text">{{ $t('navbar.portfolio') }}</span>
             </a>
           </li>
           <li class="nav-item">
@@ -593,6 +587,10 @@ import { onMounted, onUnmounted } from 'vue';
 import { ref } from 'vue';
 import initIsotope from '~/common/initIsotope';
 
+const { locales, setLocale, t } = useI18n()
+const switchLocalePath = useSwitchLocalePath()
+
+
 function handleScroll() {
   const bodyScroll = window.scrollY;
   const navbar = document.querySelector('.navbar');
@@ -627,7 +625,7 @@ function toggleSearch() {
 }
 
 onMounted(() => {
-  //initIsotope();
+  initSelect();
   window.addEventListener('scroll', handleScroll);
 });
 
@@ -733,4 +731,42 @@ function scrollToSection(id) {
     700
   );
 }
+
+
+
+const initSelect = () => {
+  let filtersElem = document.querySelector('.filtering');
+  let buttonGroups = document.querySelectorAll('.filtering');
+
+  if (filtersElem) {
+    filtersElem.addEventListener('click', () => {
+      if (!matchesSelector(event.target, 'span')) {
+        return;
+      }
+      var filterValue = event.target.getAttribute('data-filter');
+      console.log(filterValue);
+    })
+
+    const radioButtonGroup = (buttonGroup) => {
+      buttonGroup.addEventListener('click', () => {
+        if (!matchesSelector(event.target, 'span')) {
+          return;
+        }
+        buttonGroup.querySelector('.active').classList.remove('active');
+        event.target.classList.add('active');
+      })
+    }
+
+    for (var i = 0, len = buttonGroups.length; i < len; i++) {
+      var buttonGroup = buttonGroups[i];
+      radioButtonGroup(buttonGroup);
+    }
+
+
+  }
+
+
+}
+
+
 </script>

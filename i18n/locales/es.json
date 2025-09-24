@@ -1,0 +1,12 @@
+{
+    "ui": {
+        "loading_text": "Cargando"
+    },
+    "navbar": {
+        "welcome": "Bienvenido",
+        "about": "Acerca de",
+        "contact": "Contacto",
+        "services": "Servicios",
+        "portfolio": "Portafolio"
+    }
+}

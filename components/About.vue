@@ -95,7 +95,7 @@
                 </div>
               </div>
             </div>
-            <a href="#0" class="butn butn-md main-colorbg radius-30 mt-40">
+            <a href="#about" class="butn butn-md main-colorbg radius-30 mt-40">
               <span class="text-dark">Dwonload CV</span>
             </a>
           </div>

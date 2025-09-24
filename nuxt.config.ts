@@ -4,10 +4,16 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
   ssr: true,
   typescript: {
-		strict: true,
-		typeCheck: true
+        strict: true,
+        typeCheck: true
   },
-  modules: ['@nuxt/icon'],
+  modules: ['@nuxt/icon', '@nuxtjs/i18n'],
+  i18n: {
+    locales: [
+      { code: 'en', name: 'English', file: 'en.json' },
+      { code: 'es', name: 'Español', file: 'es.json' }
+    ]
+  },
   nitro: {},
   alias: {
     '@': fileURLToPath(new URL('./', import.meta.url)),

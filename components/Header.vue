@@ -3,8 +3,8 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-6">
-          <div class="img">
-            <img src="/dark/assets/imgs/intro/freelancer.png" alt="" />
+          <div class="img mb-20">
+            <img src="/dark/assets/imgs/intro/freelancer.png" class="mb-20" alt="" />
           </div>
         </div>
       </div>

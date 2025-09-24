@@ -22,6 +22,9 @@
 <script setup>
 import { onMounted } from 'vue';
 
+const { locales, setLocale } = useI18n()
+
+
 onMounted(() => {
   const svg = document.getElementById('svg');
   const tl = gsap.timeline();
