@@ -7,10 +7,10 @@
       <div class="filtering">
         <div class="filter">
           <NuxtLink :to="switchLocalePath('es')">
-            <span data-filter=".esp" class="active">Español</span>
+            <span data-filter=".esp" :class="{ active: $i18n.locale === 'es' }">Español</span>
           </NuxtLink>
           <NuxtLink :to="switchLocalePath('en')">
-            <span data-filter=".eng" @click="switchLocalePath('en')">English</span>
+            <span data-filter=".eng" :class="{ active: $i18n.locale === 'en' }">English</span>
           </NuxtLink>
         </div>
       </div>
@@ -587,7 +587,7 @@ import { onMounted, onUnmounted } from 'vue';
 import { ref } from 'vue';
 import initIsotope from '~/common/initIsotope';
 
-const { locales, setLocale, t } = useI18n()
+const { locales, setLocale, t, locale } = useI18n()
 const switchLocalePath = useSwitchLocalePath()
 
 
@@ -744,8 +744,8 @@ const initSelect = () => {
         return;
       }
       var filterValue = event.target.getAttribute('data-filter');
-      console.log(filterValue);
     })
+  
 
     const radioButtonGroup = (buttonGroup) => {
       buttonGroup.addEventListener('click', () => {
@@ -762,10 +762,7 @@ const initSelect = () => {
       radioButtonGroup(buttonGroup);
     }
 
-
   }
-
-
 }
 
 
