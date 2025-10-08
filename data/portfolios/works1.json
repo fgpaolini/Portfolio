@@ -1,8 +1,8 @@
 [
   {
-    "img": "/dark/assets/imgs/works/1/1.jpg",
-    "title": "Nice guy with a smile",
-    "subTitle": "Graphic Designing",
+    "img": "/dark/assets/imgs/works/1/wordle.webp",
+    "title": "Wordle clone",
+    "subTitle": "Clon del popular juego",
     "link": "/dark/project1"
   },
   {

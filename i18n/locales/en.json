@@ -8,5 +8,24 @@
         "contact": "Contact",
         "services": "Services",
         "portfolio": "Portfolio"
+    },
+    "sections_titles": {
+        "about": "About Me",
+        "skills": "Skills",
+        "services": "My Specialty",
+        "portfolio": "My Portfolio",
+        "contact": "Get in Touch"
+    },
+    "about": {
+      "section_title": "About Me",
+      "title": "Full Stack Developer\nspecialized in Vue.js, Nuxt and ASP.NET Core",
+      "description": "Passionate about creating modern, scalable, and high-performance web applications. I develop interactive and responsive interfaces.",
+      "name": "Fernando Gonzalez Paolini",
+      "phone": "+34 66 08 56 92",
+      "city": "Granada, Spain",
+      "email": "fgpaolinigmail.com",
+      "experience_years": "2",
+      "experience_description": "years of experience",
+      "download_cv": "Download CV"
     }
 }

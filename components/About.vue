@@ -44,14 +44,14 @@
         <div class="col-lg-6 valign">
           <div class="content full-width">
             <div class="sec-head mb-30">
-              <h6 class="sub-title mb-15 main-color">About Me</h6>
+              <h6 class="sub-title mb-15 main-color">{{ $t('sections_titles.about') }}</h6>
               <h2>
                 Full Stack Developer <br />
                 especializado en Vue.js, Nuxt y ASP.NET Core
               </h2>
               <div class="text mt-15">
                 <p>
-                  Apasionado por crear aplicaciones web modernas, escalables y de alto rendimiento. Desarrollo interfaces interactivas y responsivas.
+                  {{ $t('about.description') }}
                 </p>
               </div>
             </div>
@@ -116,3 +116,11 @@
     </div>
   </section>
 </template>
+
+
+<script setup lang="ts">
+
+
+const { locales, setLocale, t, locale } = useI18n()
+
+</script>
